@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Css/mypetition.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/signature_pad/1.3.5/signature_pad.min.js" integrity="sha512-kw/nRM/BMR2XGArXnOoxKOO5VBHLdITAW00aG8qK4zBzcLVZ4nzg7/oYCaoiwc8U9zrnsO9UHqpyljJ8+iqYiQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <title>start a petition</title>
+</head>
+<body>
+    <nav>
+        <div class="logo"><img src="./images/Black_And_White_Modern_Music_Logo__2_-removebg-preview.png" alt=""></div>
+        <div class="links-container" id="open">
+            <i class="fa fa-times" onclick="hide()"></i>
+            <ul>
+              <li><a href="./index.html" class="Active" class="nav-link>">Home</a></li>
+              <li><a href="#about">About</a> </li>
+              <li><a href="./signup.html"> Start a petition </a></li>
+                <li> <a href="./mypetition.html">My petitions</a></li>
+                <li><a href="#">projets</a></li>
+                <li><a href="#"> News</a></li>
+              
+            </ul>
+        </div>
+        <div class="hamburger" onclick="show()">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </nav>
+    
+    <h1>Sign Your Petition Form</h1> <br>
+    <div class="formcontainer">
+        <div class="bqimage"></div>
+        <h2>Help the community</h2> 
+        <p>Add your voice to the couse:sign your petition</p>
+        <form action="#">
+            <label for="Fist name"><b>First name*</b> <br>
+            <input type="text" name="First name" placeholder="First name"> 
+        </label><br> 
+            <label for="Fist name"><b>Last name*</b> <br>
+            <input type="text" name="Last name" placeholder="last name"> 
+            </label>
+            <br> 
+            <label for="Fist name"><b>Email*</b></label> <br>
+            <input type="email" name="email" placeholder="abel20@gmail.com"> <br> 
+            <label for="notes"><b>Notes*</b></label>
+          <textarea name="textArea" id="textArea" cols="30" rows="10"></textarea>
+<label for="Sign"><b>Your signature here*</b></label>
+          <div class="flex-row">
+            <div class="wrapper">
+                <canvas id="signature-pad" width="300" height="100" placeholder="sign here"></canvas>
+            </div>
+            <div class="clear-btn">
+                <button id="clear"><span> Reset </span></button>
+            </div>
+        </div>
+ <button type="submit" name="submit" class="btn">Submit</button>
+        </form>
+    </div>
+    <footer>
+        <p class="last"> <span>RYV</span> is a product of Aspilos charity foundertion by techsis4governance group 1</p>
+                                  <p class="copyright"> copyright&#169 Raiseyourvoice.org</p>
+    </footer>
+    <script src="./app.js"></script>
+    <script src="./app.js"></script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Css/signin.css">
+    <link rel="stylesheet" href="./Css/all.min.css">
+    <link rel="stylesheet" href="./Css/font-awesome/fonts/fontawesome-webfont.eot">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/Black_And_White_Modern_Music_Logo__2_-removebg-preview.png">
+    <title>Sign-In page</title>
+</head>
+
+<body>
+    <nav>
+        <div class="logo"><img src="./images/Black_And_White_Modern_Music_Logo__2_-removebg-preview.png" alt=""></div>
+        <div class="links-container" id="open">
+            <i class="fa fa-times" onclick="hide()"></i>
+            <ul>
+              <li><a href="#home" class="Active" class="nav-link>">Home</a></li>
+              <li><a href="#about">About</a> </li>
+              <li><a href="./signin.html"> Start a petition </a></li>
+                <li> <a href="./mypetition.html">My petitions</a></li>
+                <li><a href="./blog single.html">projets</a></li>
+                <li><a href="./Blog.html"> News</a></li>
+              
+            </ul>
+        </div>
+        <div class="hamburger" onclick="show()">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </nav>
+    <!-- ===================end of nav================ -->
+    <div class="section">
+
+    <h2>SIGN IN </h2>
+    <h2><span>Don't have an Account?</span> <a href="./signup.html">Sign-up here</a></h2>
+
+    <div class="signin-form">
+        <div class="form">
+            <p>please fill the form to sign-in</p>
+            <form action="#">
+              <div class="form-field">
+                <input type="email" name="email" id="email" placeholder="abeldelight201@gmail.com">
+                <small></small>
+            </div>
+            <div class="form-field"> 
+              <input type="password" name="password" id="password" placeholder="password"><i class="fa fa-eye" id="togglePassword"></i>
+              <small></small>
+             </div>
+         <div class="remember">
+             <div class="form-field">
+              <input class="checked" type="checkbox" name="Remember" value="Remember"> Remember me
+             </div>
+              <div class="forgt">
+              <p class="forget-passwd"><a href="#">Forget password?</a></p>
+             </div>
+         </div>
+             
+                      
+                      <div class="form-field"> 
+                     <button type="submit" class="sign-up"><a href="#">sign-up</a></button>
+                 </div>
+            </form>
+
+        </div>
+        <div class="social-con">
+            <p>or sign in via our social network</p> <br>
+             <a href="" class="social-icon" ><i class="fa-brands fa-facebook"></i>  Sign in with Facebook</a> <br>
+             <a href="" class="social-icon" > <i class="fa-brands fa-twitter"></i>  Sign in with twitter</a>
+        </div>
+    </div>
+  </div>
+    <footer>
+        <p class="last"> <span>RYV</span> is a product of Aspilos charity foundertion by techsis4governance group 1</p>
+                                  <p class="copyright"> copyright&#169 Raiseyourvoice.org</p>
+    </footer>
+<script src="./Js/script.js"></script>
+<script src="./app.js"></script>
+
+<!-- <script>
+    const togglePassword = document
+      .querySelector('#togglePassword');
+  
+    const password = document.querySelector('#password');
+  
+    togglePassword.addEventListener('click', () => { -->
+  
+      <!-- // Toggle the type attribute using
+      // getAttribure() method
+      const type = password
+        .getAttribute('type') === 'password' ?
+        'text' : 'password';
+        
+      password.setAttribute('type', type);
+  
+      // Toggle the eye and bi-eye icon
+      this.classList.toggle('bi-eye');
+    }); -->
+    <!-- </script> -->
+</body>
+</html>
