@@ -35,19 +35,32 @@
         <div class="bqimage"></div>
         <h2>Help the community</h2> 
         <p>Add your voice to the couse:sign your petition</p>
-        <form action="#">
-            <label for="Fist name"><b>First name*</b> <br>
-            <input type="text" name="First name" placeholder="First name"> 
+        <form id="signup">
+            <!-- <label for="Fist name"><b>First name*</b> <br> -->
+                <div class="form-field"> 
+                    <input type="text" name="firstname" id="firstname" placeholder="First name*"> <br> 
+                    <small></small>
+                </div>
+                <div class="form-field"> 
+                    <input type="text" name="Lasttname" id="lastname" placeholder="Last name*"> <br>
+                    <small></small>
+                </div> 
+       
+                <div class="form-field">
+                    <input type="email" name="email" id="email" placeholder="abeldelight201@gmail.com"> <br>
+                    <small></small>
+                </div>
         </label><br> 
-            <label for="Fist name"><b>Last name*</b> <br>
+            <!-- <label for="Fist name"><b>Last name*</b> <br>
             <input type="text" name="Last name" placeholder="last name"> 
             </label>
-            <br> 
-            <label for="Fist name"><b>Email*</b></label> <br>
-            <input type="email" name="email" placeholder="abel20@gmail.com"> <br> 
+            <br>  -->
+            <!-- <label for="Fist name"><b>Email*</b></label> <br>
+            <input type="email" name="email" placeholder="abel20@gmail.com"> <br>  -->
             <label for="notes"><b>Notes*</b></label>
           <textarea name="textArea" id="textArea" cols="30" rows="10"></textarea>
-<label for="Sign"><b>Your signature here*</b></label>
+          <label for="Sign"><b>Your signature here*</b></label>
+
           <div class="flex-row">
             <div class="wrapper">
                 <canvas id="signature-pad" width="300" height="100" placeholder="sign here"></canvas>
@@ -56,11 +69,14 @@
                 <button id="clear"><span> Reset </span></button>
             </div>
         </div>
- <button type="submit" name="submit" class="btn">Submit</button>
+ <div class="form-field"> 
+          <button type="submit" class="btn">Submit</button>
+      </div>
         </form>
     </div>
     <footer>
-        <p class="last"> <span>RYV</span> is a product of Aspilos charity foundertion by techsis4governance group 1</p>
+        
+        <p class="last"><span>RYV</span> is a product of Aspilos charity foundertion by techsis4governance group 1</p>
                                   <p class="copyright"> copyright&#169 Raiseyourvoice.org</p>
     </footer>
     <script src="./app.js"></script>

@@ -1,0 +1,321 @@
+@import url("https://fonts.googleapis.com/css?family=Lato|Roboto:400,900&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+
+}
+.logo img{
+    width: 300px;
+    height: 45vh;
+    padding-top: 0px;
+    margin: -65px 0px 0px -60px;
+    padding-left:-15px ;
+} 
+.fa-times{
+    visibility: hidden;
+}
+nav{
+    /* background-color: #f99400; */
+    min-height: 70px;
+   display: flex;
+   justify-content: center; 
+   padding-top: 10px;
+   gap:100px;
+   width: 100%;
+   
+   }
+   .links-container ul{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    gap:20px;
+    padding-top: 0px;
+     margin-top: 5%;
+   
+}  
+.nav-link{
+    transition: 0.7s ease;
+}
+
+.links-container ul li a:hover {
+    background: black;
+    color: #f1f1f1;
+    transition: 1.2s ease-in;
+    border-bottom: 2px solid rgb(20, 24, 14);
+}
+
+.links-container ul li a{
+    color: #091114;
+    font-size:20px;
+    font-weight: 600;
+}
+
+/* dropdown part */
+.dropbtn {
+    display: flex;
+    gap: 10px;
+}
+.dropbtn button{
+    color:#091114;
+    padding: 0px;  
+    font-size:20px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: fixed;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 5px 10px;
+    text-decoration: none;
+    display: block;
+    
+}
+.dropdown-content a svg{
+    margin-right: 10px;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: rgb(217, 215, 238); 
+}
+.down{
+    width: 30px;
+    height: 20px;
+}
+.hamburger{
+    display:none;
+    cursor: pointer;
+}
+.admin i{
+    color: #f99400;
+    margin-top: 50px;
+    padding: 0 5px;
+    font-size: 25px;
+}
+.bar {
+    display: block;
+    width: 40px;
+    height: 6px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #262626;
+}
+
+#about{
+    width: 100%;
+    height: 50vh;
+    /* background-color: #f1f1f1; */
+    margin-top: -5%;
+}
+.about-section{
+width: 60%;
+height: 130vh;
+background-color: #f1f1f1;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+margin-left: 20%;
+padding: 20px 100px;
+border-radius: 6px;
+}
+h2{
+    color: #f99400;
+    font-size: 25px;
+    text-align: left;
+    margin-top: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    opacity: 0.5;
+    padding-top: 2%;
+
+}
+ #about .about-p {
+    color: #878484;
+    font-size: 15px;
+    font-weight: 300;
+    text-align: left;
+}
+.footer-firstpart{
+    padding-top: 5%;
+    margin-left: 10%;
+}
+.footer-firstpart a{
+    display: block;
+    padding-top: 2px;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    color: #858181;
+}
+.footer-firstpart a:hover{
+    background: #f99400;
+    color: #f1f1f1;
+    transition: 1.2s ease-in;
+}
+footer{
+    
+    margin-top: 5%;
+    width: 100%;
+    height: 55vh;
+    background-color: #f9950042;
+}
+.second-footer{
+    padding-top: 15%;
+}
+.second-footer a{
+   
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    color: #858181;
+    /* padding-left: 25%; */
+}
+.second-footer a:hover{
+    background: #f99400;
+    color: #f1f1f1;
+    transition: 1.2s ease-in;
+}
+
+.ryv-con{
+    display: flex;
+    gap: 20%;
+}
+.last{
+    font-size: 15px;
+    font-weight: 400;
+    color: #aca8a8;
+    text-transform: lowercase;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    /* padding-top: 45%;
+    padding-left: -5%; */
+}
+.last span{
+    font-size: 15px;
+    font-weight: 800;
+    color: #f99400;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+     
+}
+.copyright{
+    text-align: center;
+    font-size: 15px;
+    color: #aca8a8;
+    /* padding-top: 15%; */
+}
+
+@media screen and (max-width: 768px){
+    .hamburger {
+        padding-top: 0%;
+        display: block;
+        margin-left: 8%;
+        /* margin-top: -35%; */
+    }
+    .logo img {
+        width: 200px;
+        height: 30vh;
+        /* margin-top: -15%; */
+        /* margin-left: -4%; */
+        margin-bottom: 0%;
+        margin-right: 0%;
+    }
+    nav{
+        display: flex;
+        padding: 20px;
+        gap: 20px;
+        /* flex-direction: column-reverse; */
+    }
+    .admin {
+        display: flex;
+       
+    }
+    .admin i{
+        color: #f99400;
+        margin-top: 6px;
+        padding: 0 5px;
+    }
+    .links-container{
+        position: fixed;
+        top: 0%;
+        right: -600px;
+        width: 55%;
+        height: 40vh;
+        background-color: #fff;
+        z-index: 2;
+    }
+    .links-container ul li, a {
+        color: #16191a;
+        font-size: 20px;
+        font-weight: 600;
+        margin-left: 3%;
+    }
+    .dropbtn button {
+        color: #16191a;
+        padding: 0px;
+        font-size: 20px;
+        font-weight: 600;
+        border: none;
+        cursor: pointer;
+        background-color: transparent;
+        margin-left: 3%;
+    }
+.links-container ul{
+    display: block;
+}
+.fa-times{
+    visibility: visible;
+}
+.about-section {
+    width: 90%;
+    height: 130vh;
+    background-color: #f1f1f1;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+    margin-left: 5%;
+    padding: 20px 25px;
+    border-radius: 6px;
+}
+ .aboutus-con h2 {
+    color: #f99400;
+    font-size: 20px;
+    text-align: left;
+    margin-top: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    opacity: 0.5;
+    padding-top: 0%;
+}
+.objectives-con h2 {
+    color: #f99400;
+    font-size: 20px;
+    text-align: left;
+    margin-top: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    opacity: 0.5;
+    padding-top: 0%;
+}
+}

@@ -1,54 +1,9 @@
-
 //------------------form validation-----------------
-const firstnameEl = document.querySelector('#firstname');
-const lastnameEl = document.querySelector('#lastname');
 const emailEl = document.querySelector('#email');
 const passwordEl = document.querySelector('#password');
-const confirmPasswordEl = document.querySelector('#confirm-password');
+
 
 const form = document.querySelector('#signup');
-
-
-const checkFirstName = () => {
-
-    let valid = false;
-
-    const min = 3,
-        max = 25;
-
-    const firstname = firstnameEl.value.trim();
-
-    if (!isRequired(firstname)) {
-        showError(firstnameEl, 'First Name cannot be blank.');
-    } else if (!isBetween(firstname.length, min, max)) {
-        showError(firstnameEl, `First Name must be between ${min} and ${max} characters.`)
-    } else {
-        showSuccess(firstnameEl);
-        valid = true;
-    }
-    return valid;
-};
-
-const checkLastName = () => {
-
-    let valid = false;
-
-    const min = 3,
-        max = 25;
-
-    const lastname = lastnameEl.value.trim();
-
-    if (!isRequired(lastname)) {
-        showError(lastnameEl, 'Last Name cannot be blank.');
-    } else if (!isBetween(lastname.length, min, max)) {
-        showError(lastnameEl, `Last Name must be between ${min} and ${max} characters.`)
-    } else {
-        showSuccess(lastnameEl);
-        valid = true;
-    }
-    return valid;
-};
-
 
 const checkEmail = () => {
     let valid = false;
@@ -145,15 +100,11 @@ form.addEventListener('submit', function (e) {
     e.preventDefault();
     
     // validate fields
-    let isFirstnameValid = checkFirstName(),
-        isLastnameValid = checkLastName(),
-        isEmailValid = checkEmail(),
+    let  isEmailValid = checkEmail(),
         isPasswordValid = checkPassword();
         // isConfirmPasswordValid = checkConfirmPassword();
 
-    let isFormValid = isFirstnameValid &&
-        isLastnameValid &&
-        isEmailValid &&
+    let isFormValid = isEmailValid &&
         isPasswordValid;
         // isConfirmPasswordValid;
 
@@ -183,21 +134,11 @@ const debounce = (fn, delay = 500) => {
 
 form.addEventListener('input', debounce(function (e) {
     switch (e.target.id) {
-        case 'firstname':
-            checkFirstName();
-            break;
-        case 'lastname':
-            checkLastName();
-            break;
         case 'email':
             checkEmail();
             break;
         case 'password':
             checkPassword();
             break;
-        case 'confirm-password':
-            checkConfirmPassword();
-            break;
     }
 }));
-
