@@ -123,7 +123,18 @@ a:hover {
     transition: all 0.3s ease-in-out;
     background-color: #262626;
 }
-
+.admin i{
+    color: #f99400;
+    margin-top: 50px;
+    padding: 0 5px;
+    font-size: 25px;
+}
+small{
+    color: red;
+    margin: 0%;
+    padding: 0%;
+    font-size: 20px;
+}
 .formcontainer{
     width: 50%;
     height: 150vh;
